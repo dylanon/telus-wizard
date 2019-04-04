@@ -9,7 +9,14 @@
   },
   "license": "MIT",
   "main": "index.js",
-  "keywords": ["telus","wizard","react","telus","builder","steps"],
+  "keywords": [
+    "telus",
+    "wizard",
+    "react",
+    "telus",
+    "builder",
+    "steps"
+  ],
   "engines": {
     "node": ">=8"
   },
@@ -36,6 +43,6 @@
     "test": "npm run test:tap"
   },
   "devDependencies": {
-    "tap": "^11.1.0"
+    "tap": "^12.6.1"
   }
 }

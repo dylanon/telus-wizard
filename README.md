@@ -2,7 +2,9 @@
 
 [![version][npm-image]][npm-url] [![Build Status][circle-image]][circle-url]
 
-> Wizard the renders a React component based on the steps you pass to it
+> Wizard that renders a React component based on the steps you pass to it
+
+🧙‍♂️🧙‍♀️
 
 ## Install
 
@@ -16,7 +18,7 @@ npm run setup-local
 ```
 
 ---
-> Github: [@telus](https://github.com/telus) &bull; 
+> Github: [@telus](https://github.com/telus) &bull;
 > Twitter: [@telusdigital](https://twitter.com/telusdigital)
 
 [circle-url]: https://circleci.com/gh/telus/telus-wizard

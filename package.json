@@ -46,7 +46,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-transition-group": "^2.9.0",
+    "react-transition-group": "^4.0.0",
     "styled-components": "^4.2.0"
   },
   "peerDependencies": {

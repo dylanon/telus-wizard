@@ -28,6 +28,13 @@ npm install @telus/telus-wizard --save
 ```
 **Optional, but recommended**. Default is `null`. This method allows you to set a generic component to be used for your steps. Can be overridden for individual steps.
 
+### setTransition
+```
+.setTransition(isEnabled = Boolean)
+```
+
+Default is `true`. This method allows you to disable transitions between steps.
+
 ### createSteps
 ```
 .createSteps()

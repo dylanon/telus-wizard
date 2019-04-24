@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import AnimationWrapper from './AnimationWrapper'
+import TransitionWrapper from './TransitionWrapper'
 import { DIRECTION } from './constants'
 
 class WizardUI extends PureComponent {
@@ -70,18 +70,17 @@ class WizardUI extends PureComponent {
   }
 
   render () {
-    const { animation } = this.props
+    const { showTransition } = this.props
     const { currentStep, direction } = this.state
-
     return (
       <section>
         {currentStep && (
           <>
             {
-              animation ? (
-                <AnimationWrapper id={currentStep.id} direction={direction}>
+              showTransition ? (
+                <TransitionWrapper id={currentStep.id} direction={direction}>
                   {currentStep.buildComponent(this.goToNextStep, this.goToPrevStep)}
-                </AnimationWrapper>
+                </TransitionWrapper>
               ) : (
                 currentStep.buildComponent(this.goToNextStep, this.goToPrevStep)
               )
@@ -96,11 +95,11 @@ class WizardUI extends PureComponent {
 WizardUI.propTypes = {
   steps: PropTypes.array.isRequired,
   initialStep: PropTypes.string.isRequired,
-  animation: PropTypes.bool
+  showTransition: PropTypes.bool
 }
 
 WizardUI.defaultProps = {
-  animation: true
+  showTransition: true
 }
 
 export default WizardUI

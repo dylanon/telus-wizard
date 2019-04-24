@@ -8,6 +8,7 @@ class Wizard {
     this.lang = 'en'
     this._currentNode = null
     this.defaultComponent = null
+    this.transition = true
   }
 
   _validateStep (id) {
@@ -59,6 +60,12 @@ class Wizard {
     return this
   }
 
+  setTransition (isEnabled = true) {
+    this.transition = isEnabled
+
+    return this
+  }
+
   addStep (id, params, component) {
     this._validateStep(id)
 
@@ -101,6 +108,7 @@ class Wizard {
         steps={this.steps}
         initialStep={initialStep}
         lang={this.lang}
+        showTransition={this.transition}
       />
     )
   }
